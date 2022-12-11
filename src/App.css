@@ -1,38 +1,224 @@
-.App {
-  text-align: center;
+html {
+  scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+/* Pink Light scheme (Default) */
+/* Can be forced with data-theme="light" */
+[data-theme="light"],
+:root:not([data-theme="dark"]) {
+  --primary: #25c068;
+  --primary-hover: #1d9a53;
+  --primary-focus: rgba(37, 192, 104, 0.125);
+  --primary-inverse: #FFF;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Pink Dark scheme (Auto) */
+/* Automatically enabled if user has Dark mode enabled */
+@media only screen and (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --primary: #25c068;
+    --primary-hover: #1d9a53;
+    --primary-focus: rgba(37, 192, 104, 0.125);
+    --primary-inverse: #FFF;
   }
 }
 
-.App-header {
-  background-color: #282c34;
+/* Pink Dark scheme (Forced) */
+/* Enabled if forced with data-theme="dark" */
+[data-theme="dark"] {
+  --primary: #23a455;
+  --primary-hover: #1d9a53;
+  --primary-focus: rgba(37, 192, 104, 0.125);
+  --primary-inverse: #FFF;
+}
+
+/* Pink (Common styles) */
+:root {
+  --form-element-active-border-color: var(--primary);
+  --form-element-focus-color: var(--primary-focus);
+  --switch-color: var(--primary-inverse);
+  --switch-checked-background-color: var(--primary);
+  --font-family: 'Inter', system-ui,-apple-system,"Segoe UI","Roboto","Ubuntu","Cantarell","Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+.section-container {
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  width: 100%;
+}
+
+.split {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.title {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 134.02%;
+  color: #393939;
+  margin-bottom: var(--spacing);
+}
+
+.subtitle {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 160.52%;
+  color: #23A455;
+  margin-bottom: var(--spacing);
+}
+
+.txt {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 175.52%;
+  /* or 32px */
+  
+  color: #000000;
+  padding-bottom: var(--spacing);
+  margin-bottom: var(--spacing);
+}
+
+.green-circle {
+  width: 68.48px;
+  height: 68.48px;
+  background: #D4F1E1;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: var(--spacing);
+}
+
+.rectangle {
+  background: #F2FBF6;
+  border-radius: 12px;
+  max-width: 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: var(--spacing) calc(var(--spacing) * 2);
+}
+
+.main-infographic {
+  width: 100%;
+  height: 100%;
+}
+
+.main-infographic {
+  position: relative;
+  width: 640px;
+  height: 640px;
+}
+
+.card-1{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.card-2{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.card-3{
+  position: absolute;
+  bottom: 0;
+  right: calc(50% - 125px);
+}
+
+.dashed-circle{
+  box-sizing: border-box;
+  position: absolute;
+  width: 378px;
+  height: 378px;
+  border-radius: 50%;
+  border: 3px dashed #23A455;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.withOverflowingBackground::before {
+  content: " ";
+  position: absolute;
+  right: 0;
+  left: 0;  
+  height: 100%;
+  z-index: -1;
+  background: linear-gradient(90deg, rgba(242,251,246,1) 72%, rgba(35,164,85,1) 72%);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.withOverflowingBackground-1::before {
+  content: " ";
+  position: absolute;
+  right: 0;
+  left: 0;
+  height: 100%;
+  z-index: -1;
+  background: linear-gradient(90deg, rgba(35,164,85,1) 28%, rgb(255, 255, 255) 28%);
+}
+
+/* .section-img {
+  width: 874px;
+  height: 514px;
+} */
+
+.section-img {
+  width: 100%;
+  max-width: 874px;
+  max-height: 514px;
+}
+
+.img-container {
+  margin-right: calc((100vh / 10) * -1);
+  margin-left: calc(100vh / 20);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-container.reverse {
+  margin-right: calc(100vh / 20);
+  margin-left: calc((100vh / 10) * -1);
+}
+
+.container {
+    width: 80vw;
+    max-width: 1400px;
+}
+
+@media (max-width: 1200px) { 
+  .container {
+    width: 95vw;
+    max-width: 1400px;
   }
-  to {
-    transform: rotate(360deg);
+  .img-container {
+    margin-right: 0;
+    margin-left: var(--spacing);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .img-container.reverse {
+    margin-right: var(--spacing);
+    margin-left: 0;
   }
 }
