@@ -16,6 +16,7 @@ const shortStyle = {
   lineHeight: '19px',
   textAlign: 'center',
   marginBottom: 'calc(var(--spacing) / 2)',
+  color: '#23A455',
 }
 
 const ProductCard = props => {
@@ -25,7 +26,7 @@ const ProductCard = props => {
       <img src={logo}/>
     </div>
     <div style={nameStyle}>{name}</div>
-    <div style={shortStyle}>{short}</div>
+    <div style={shortStyle}><b>{short}</b></div>
     <div style={shortStyle}>{long}</div>
     <img src="images/right-arrow.svg"/>
   </div>
