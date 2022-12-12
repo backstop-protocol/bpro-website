@@ -29,6 +29,7 @@ body::-webkit-scrollbar {
     --primary-hover: #1d9a53;
     --primary-focus: rgba(37, 192, 104, 0.125);
     --primary-inverse: #FFF;
+    --background-color: #1F202F;
   }
 }
 
@@ -170,7 +171,7 @@ section {
   left: 0;  
   height: 100%;
   z-index: -1;
-  background: linear-gradient(90deg, rgba(242,251,246,1) 72%, rgba(35,164,85,1) 72%);
+  background: linear-gradient(90deg,  var(--background-color) 72%, rgba(35,164,85,1) 72%);
 }
 
 .withOverflowingBackground-1::before {
@@ -180,7 +181,7 @@ section {
   left: 0;
   height: 100%;
   z-index: -1;
-  background: linear-gradient(90deg, rgba(35,164,85,1) 28%, rgb(255, 255, 255) 28%);
+  background: linear-gradient(90deg, rgba(35,164,85,1) 28%, var(--background-color) 28%);
 }
 
 /* .section-img {

@@ -4,15 +4,16 @@ const linkStyle = {
 }
 
 const iconStyle = {
-  margin: '0 10px'
+  margin: '0 10px',
+  filter: `invert(${window.darkMode ? 1 : 0})`
 }
 
 const Header = props => {
-
+  const darkMode = window.darkMode
   return <div>
     <nav>
       <ul>
-        <li><img style={{height: '39px'}} src="/full-logo.svg"/></li>
+        <li><img style={{height: '39px'}} src={`/full-logo${darkMode ? '-dark' : ''}.svg`}/></li>
       </ul>
       <ul>
         <li><a style={linkStyle} className="contrast" href="#">Home</a></li>
