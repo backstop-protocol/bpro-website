@@ -43,7 +43,8 @@ html {
 }
 
 .section-container {
-  min-height: 100vh;
+  height: 100vh;
+  min-height: 900px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -221,4 +222,8 @@ section {
     margin-right: var(--spacing);
     margin-left: 0;
   }
+}
+
+[role=button] {
+  border-radius: 30px;
 }
