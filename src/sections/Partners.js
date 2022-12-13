@@ -20,8 +20,8 @@ const styles = {
 }
 
 const Partners = props => {
-  return <div>
-    <section  style={{height: '400px', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column'}}>
+  return <div className="withOverflowingBackground-white">
+    <section  style={{height: '500px', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', marginBottom: 0}}>
       <div style={styles.title}>
         Backed By
       </div>

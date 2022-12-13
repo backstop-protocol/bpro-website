@@ -75,7 +75,7 @@ section {
   font-weight: 600;
   font-size: 40px;
   line-height: 134.02%;
-  color: #393939;
+  color: var(--contrast);
   margin-bottom: var(--spacing);
 }
 
@@ -97,7 +97,7 @@ section {
   line-height: 175.52%;
   /* or 32px */
   
-  color: #000000;
+  color: var(--contrast);
   padding-bottom: var(--spacing);
   margin-bottom: var(--spacing);
 }
@@ -169,8 +169,8 @@ section {
   position: absolute;
   right: 0;
   left: 0;  
-  height: 100%;
-  z-index: -1;
+  height: 100vh;
+  min-height: 900px;  z-index: -1;
   background: linear-gradient(90deg,  var(--background-color) 72%, rgba(35,164,85,1) 72%);
 }
 
@@ -179,9 +179,19 @@ section {
   position: absolute;
   right: 0;
   left: 0;
-  height: 100%;
-  z-index: -1;
+  height: 100vh;
+  min-height: 900px;  z-index: -1;
   background: linear-gradient(90deg, rgba(35,164,85,1) 28%, var(--background-color) 28%);
+}
+
+.withOverflowingBackground-white::before {
+  content: " ";
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: -1;
+  height: 500px;
+  background: white;
 }
 
 /* .section-img {

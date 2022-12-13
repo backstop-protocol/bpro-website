@@ -40,6 +40,9 @@ const themeSwitcher = {
     buttons.forEach(button => {
       button.addEventListener('click', () => {
         this.scheme == 'dark' ? this.scheme = 'light' : this.scheme = 'dark';
+        if (window.rerender) {
+          window.rerender();
+        }
       }, false);
     });
   },

@@ -35,7 +35,7 @@ const styles = {
     fontWeight: 600,
     fontSize: '40px',
     lineHeight: '134.02%',
-    color: '#393939',
+    color: 'var(--contrast)',
   },
   subTitle: {
     fontStyle: 'normal',
@@ -50,13 +50,14 @@ const styles = {
     fontWeight: 400,
     fontSize: '18px',
     lineHeight: '175.52%',
-    color: '#000000',
+    color: 'var(--contrast)',
     marginBottom: 'calc(var(--spacing) / 2)',
   },
 }
 
 
 const RiskDao = props => {
+  const {darkMode} = window
   return <div id="riskDAO" className="section-container withOverflowingBackground">
     <section className="grid">
       <div>
@@ -78,7 +79,7 @@ const RiskDao = props => {
         </div>
       </div>
       <div className="img-container">
-        <img className="section-img" src="images/bad-debt.png" />
+        <img className="section-img" src={darkMode ? "images/bad-debt-dark.png" : "images/bad-debt.png"} />
       </div>
     </section>
   </div>

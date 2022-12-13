@@ -35,7 +35,7 @@ const styles = {
     fontWeight: 600,
     fontSize: '40px',
     lineHeight: '134.02%',
-    color: '#393939',
+    color: 'var(--contrast)',
   },
   subTitle: {
     fontStyle: 'normal',
@@ -50,16 +50,17 @@ const styles = {
     fontWeight: 400,
     fontSize: '18px',
     lineHeight: '175.52%',
-    color: '#000000',
+    color: 'var(--contrast)',
     marginBottom: 'calc(var(--spacing) / 2)',
   }
 }
 
 const Backstop = props => {
+  const {darkMode} = window
   return <div id="backstop" className="section-container withOverflowingBackground-1">
   <section className="grid">
       <div  className="img-container reverse">
-        <img className="section-img" src="images/backstop.png" />
+        <img className="section-img" src={darkMode ? "images/backstop-dark.png" : "images/backstop.png"} />
       </div>
       <div>
         <div style={styles.header}>

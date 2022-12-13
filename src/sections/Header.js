@@ -3,13 +3,14 @@ const linkStyle = {
   margin: '0 var(--spacing)'
 }
 
-const iconStyle = {
-  margin: '0 10px',
-  filter: `invert(${window.darkMode ? 1 : 0})`
-}
+
 
 const Header = props => {
-  const darkMode = window.darkMode
+  const {darkMode} = window
+  const iconStyle = {
+    margin: '0 10px',
+    filter: `invert(${window.darkMode ? 1 : 0})`
+  }
   return <div>
     <nav>
       <ul>
