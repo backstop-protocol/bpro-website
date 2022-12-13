@@ -11,6 +11,11 @@ body::-webkit-scrollbar {
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+:root{
+  --calm-bg: #1F202F;
+  --main-bg: #1F202F;
+  --background-color: #1F202F;
+}
 /* Pink Light scheme (Default) */
 /* Can be forced with data-theme="light" */
 [data-theme="light"],
@@ -19,6 +24,8 @@ body::-webkit-scrollbar {
   --primary-hover: #1d9a53;
   --primary-focus: rgba(37, 192, 104, 0.125);
   --primary-inverse: #FFF;
+  --calm-bg: #F2FBF6;
+  --main-bg: #fff;
 }
 
 /* Pink Dark scheme (Auto) */
@@ -30,6 +37,9 @@ body::-webkit-scrollbar {
     --primary-focus: rgba(37, 192, 104, 0.125);
     --primary-inverse: #FFF;
     --background-color: #1F202F;
+    --calm-bg: #1F202F;
+    --main-bg: #1F202F;
+
   }
 }
 
@@ -171,7 +181,7 @@ section {
   left: 0;  
   height: 100vh;
   min-height: 900px;  z-index: -1;
-  background: linear-gradient(90deg,  var(--background-color) 72%, rgba(35,164,85,1) 72%);
+  background: linear-gradient(90deg,  var(--calm-bg) 72%, rgba(35,164,85,1) 72%);
 }
 
 .withOverflowingBackground-1::before {
@@ -181,7 +191,7 @@ section {
   left: 0;
   height: 100vh;
   min-height: 900px;  z-index: -1;
-  background: linear-gradient(90deg, rgba(35,164,85,1) 28%, var(--background-color) 28%);
+  background: linear-gradient(90deg, rgba(35,164,85,1) 28%, var(--main-bg) 28%);
 }
 
 .withOverflowingBackground-white::before {
