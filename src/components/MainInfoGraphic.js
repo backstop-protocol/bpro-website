@@ -1,7 +1,7 @@
 import ProductCard from './ProductCard'
 
 export default props => {
-  return <div style={{display: 'flex', justifyContent: 'flex-end'}}>
+  return <div style={{display: 'flex', justifyContent: 'center'}}>
     <div className="main-infographic">
         <div style={{
           width: '100%',

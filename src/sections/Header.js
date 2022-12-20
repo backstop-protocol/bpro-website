@@ -1,15 +1,17 @@
-
+import MobileHeader from "./MobileHeader";
 const linkStyle = {
   margin: '0 var(--spacing)'
 }
 
-
-
 const Header = props => {
-  const {darkMode} = window
+  const {darkMode, isMobile} = window
   const iconStyle = {
     margin: '0 10px',
     filter: `invert(${window.darkMode ? 1 : 0})`
+  }
+
+  if (isMobile) {
+    return <MobileHeader/>
   }
   return <div>
     <nav>

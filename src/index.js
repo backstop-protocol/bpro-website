@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+window.isMobile = window.innerWidth < 600
 window.rerender = ()=> root.render(
   <React.StrictMode>
     <App />

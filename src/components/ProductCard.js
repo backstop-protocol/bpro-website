@@ -1,18 +1,8 @@
 
-const nameStyle = {
-  fontStyle: 'normal',
-  fontWight: '600',
-  fontSize: '21px',
-  lineHeight: '25px',
-  textAlign: 'center',
-  color: '#23A455',
-  marginBottom: 'calc(var(--spacing) / 2)',
-}
-
 const shortStyle = {
   fontStyle: 'normal',
   fontWeight: '400',
-  fontSize: '16px',
+  fontSize: '1.6rem',
   lineHeight: '19px',
   textAlign: 'center',
   marginBottom: 'calc(var(--spacing) / 2)',
@@ -23,12 +13,12 @@ const ProductCard = props => {
   const {logo, name, short, long} = props
   return <div className="rectangle">
     <div className="green-circle">
-      <img src={logo}/>
+      <img className="card-logo" src={logo}/>
     </div>
-    <div style={nameStyle}>{name}</div>
-    <div style={shortStyle}><b>{short}</b></div>
-    <div style={shortStyle}>{long}</div>
-    <img src="images/right-arrow.svg"/>
+    <div className="card-name">{name}</div>
+    <div className="card-txt"><b>{short}</b></div>
+    <div className="card-txt">{long}</div>
+    <img className="card-arrow" src="images/right-arrow.svg"/>
   </div>
 }
 

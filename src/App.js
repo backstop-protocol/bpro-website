@@ -5,7 +5,7 @@ import First from './sections/First'
 import Pythia from './sections/Pythia'
 import Backstop from './sections/Backstop'
 import RiskDao from './sections/RiskDao'
-import Partners from './sections/Partners'
+import BackedBy from './sections/BackedBy'
 import Footer from './sections/Footer'
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
           <Pythia/>
           <Backstop/>
           <RiskDao/>
-          <Partners/>
+          <BackedBy/>
         </main>
         <Footer/>
     </div>
