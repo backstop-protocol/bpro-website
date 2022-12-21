@@ -28,15 +28,14 @@ const MobileHeader = props => {
     </nav>
     <div className="mobile-menu" style={{height: menuOpen ? '340px' : '0px'}}>
       <div style={{padding: '20px'}}>
-        <div className="item"><a style={linkStyle} className="contrast" href="#">Home</a></div>
         <div className="item"><a style={linkStyle}  className="contrast" href="https://docs.bprotocol.org/">Docs</a></div>
-        <div className="item" style={{marginRight: 'var(--spacing)'}}><a style={linkStyle}  className="contrast" href="https://dashboard.bprotocol.org/">Dashboard</a></div>
+        <div className="item"><a style={linkStyle}  className="contrast" href="https://dashboard.bprotocol.org/">Dashboard</a></div>
+        <div className="item"><a style={linkStyle}  className="contrast" href="https://forum.bprotocol.org/">Forum</a></div>
         <div  className="item">
           <a href="https://twitter.com/bprotocoleth"><img style={iconStyle} src="images/social/twitter.svg"/></a>
           <a href="https://discord.com/invite/bJ4guuw"><img style={iconStyle} src="images/social/discord.svg"/></a>
           <a href="https://github.com/backstop-protocol"><img style={iconStyle} src="images/social/github-icon.svg"/></a>
           <a href="https://medium.com/b-protocol"><img style={iconStyle} src="images/social/medium.svg"/></a>
-          <a href="https://forum.bprotocol.org/"><img style={iconStyle} src="images/social/cw.svg"/></a>
         </div>
         <div className="item "><a style={{width: '90px', fontSize: '16px', padding: 'padding: 8px 27px'}} href="https://app.bprotocol.org" role="button">App</a></div>
       </div>

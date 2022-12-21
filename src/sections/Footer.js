@@ -5,9 +5,9 @@ const Footer = props => {
       <div className="footer-main">
         <img className="footer-logo" src="logo.svg"/>
         <div className="footer-link-row">
-          <a className="footer-link" href="#">Home</a>
           <a className="footer-link"  href="https://docs.bprotocol.org">Docs</a>
           <a className="footer-link" href="https://dashboard.bprotocol.org">Dashboard</a>
+          <a className="footer-link" href="https://forum.bprotocol.org/">Forum</a>
           <a className="footer-link" href="https://app.bprotocol.org">App</a>
         </div>
         <div className="footer-social-row">
@@ -15,7 +15,6 @@ const Footer = props => {
           <a className="footer-social-link" href="https://discord.com/invite/bJ4guuw"><img src="images/social/Group 7.svg"/></a>
           <a className="footer-social-link" href="https://twitter.com/bprotocoleth"><img src="images/social/Group 8.svg"/></a>
           <a className="footer-social-link" href="https://medium.com/b-protocol"><img src="images/social/Group 24.svg"/></a>
-          <a className="footer-social-link" href="https://forum.bprotocol.org/"><div className="footer-white-circle"><img src="images/social/cw-white.svg"/></div></a>
         </div>
       </div>
     </footer>

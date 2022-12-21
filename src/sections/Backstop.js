@@ -2,15 +2,16 @@
 
 const Backstop = props => {
   const {darkMode, isMobile} = window
+  const src = darkMode ? "images/backstop-lg.jpg" : "images/backstop-lg.jpg"
   return <div id="backstop" className="section-container withOverflowingBackground-1 section-3">
   <section className="grid">
       {!isMobile && <div  className="img-container reverse">
-        <img className="section-img" src={darkMode ? "images/backstop-dark.png" : "images/backstop.png"} />
+        <img className="section-img" src={src} />
       </div>}
-      <div>
+      <div className="section-main-reverse">
         <div className="section-header">
           <div className="section-icon-wrapper">
-            <img height="35" src="backstop.svg" />
+            <img src="backstop.svg" />
           </div>
           <div className="section-divider"></div>
           <div className="section-titles-container">
@@ -27,7 +28,7 @@ const Backstop = props => {
         </div>
       </div>
       {isMobile && <div  className="img-container reverse">
-        <img className="section-img" src={darkMode ? "images/backstop-dark.png" : "images/backstop.png"} />
+        <img className="section-img" src={src} />
       </div>}
     </section>
   </div>

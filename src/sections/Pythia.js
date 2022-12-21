@@ -4,7 +4,7 @@ const Pythia = props => {
   const {darkMode} = window
   return <div id="pythia" className="section-container withOverflowingBackground section-2">
     <section className="grid">
-      <div>
+      <div className="section-main ">
         <div className="section-header">
           <div className="section-icon-wrapper">
             <img height="35" src="pythia.svg"/>
@@ -25,7 +25,7 @@ const Pythia = props => {
         </div>
       </div>
       <div className="img-container">
-        <img className="section-img" src={darkMode ? 'images/chart-dark.png' : 'images/code-1.jpg'} />
+        <img className="section-img" src={darkMode ? 'images/pythia-code-dark.png' : 'images/pythia-code.png'} />
       </div>
     </section>
   </div>

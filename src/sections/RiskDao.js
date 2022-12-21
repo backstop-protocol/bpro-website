@@ -3,10 +3,10 @@ const RiskDao = props => {
   const {darkMode} = window
   return <div id="riskDAO" className="section-container withOverflowingBackground-4 section-4">
     <section className="grid">
-      <div>
+      <div className="section-main">
         <div className="section-header">
           <div className="section-icon-wrapper">
-            <img height="35" src="riskDao.svg"/>
+            <img height="35" src="riskDAO.svg"/>
           </div>
           <div className="section-divider"></div>
           <div className="section-titles-container">
@@ -22,7 +22,7 @@ const RiskDao = props => {
         </div>
       </div>
       <div className="img-container">
-        <img className="section-img" src={darkMode ? "images/bad-debt-dark.png" : "images/bad-debt.png"} />
+        <img className="section-img" src={darkMode ? "images/riskdao-bd-dark.png" : "images/riskdao-bd.png"} />
       </div>
     </section>
   </div>

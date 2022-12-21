@@ -15,17 +15,17 @@ export default props => {
           </div>
         </div>
         <div className="card-1">
-          <a href="#pythia">
+          <a href="#pythia" className="card-link">
             <ProductCard logo={"pythia.svg"} name="Pythia" short="DeFi Risk Oracle" long="A standard for on-chain risk rating."/>
           </a>
         </div>      
         <div className="card-2">
-          <a href="#backstop">
+          <a href="#backstop" className="card-link">
             <ProductCard logo={"backstop.svg"} name="Backstop" short="Liquidation Engine" long="Mitigating risk for DeFi lending platforms with."/>
           </a>
         </div>     
         <div className="card-3">
-          <a href="#riskDAO">
+          <a href="#riskDAO" className="card-link">
             <ProductCard logo={"riskDAO.svg"} name="RiskDAO" short="Risk Assessment" long="Analyzing DeFi economic risks."/>
           </a>
         </div>

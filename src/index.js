@@ -1,11 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-window.isMobile = window.innerWidth < 600
+window.isMobile = window.innerWidth < 1000
 window.rerender = ()=> root.render(
   <React.StrictMode>
     <App />
