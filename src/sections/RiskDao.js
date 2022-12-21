@@ -22,7 +22,7 @@ const RiskDao = props => {
         </div>
       </div>
       <div className="img-container">
-        <img className="section-img" src={darkMode ? "images/riskdao-bd-dark.png" : "images/riskdao-bd.png"} />
+        <img className="section-img" src={darkMode ? "images/graph-dark.png" : "images/graph.png"} />
       </div>
     </section>
   </div>

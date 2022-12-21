@@ -41,10 +41,18 @@
   .withOverflowingBackground::before, 
   .withOverflowingBackground-4::before, 
   .withOverflowingBackground-1::before {
-    height: 900px;
+    height: 1000px;
   }
 
-  .section-2, .withOverflowingBackground::before, .section-3, .withOverflowingBackground-1::before {
+  .section-1 {
+    height: 1000px!important;
+  }
+
+  .section-2, .withOverflowingBackground::before{
+    height: 900px!important;
+  }
+
+  .section-3.withOverflowingBackground-1::before {
     height: 1100px!important;
   }
 
@@ -252,7 +260,6 @@
   }
   .backed-by-img-container{
     width: unset;
-    height: ;
     max-width: 100px;
     min-width: 100px;
     flex-direction: column;

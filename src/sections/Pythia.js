@@ -16,10 +16,9 @@ const Pythia = props => {
           </div>
         </div>
         <div className="section-subtitle">A standard for on-chain risk rating</div>
-        <div className="section-txt">DeFi is all about building on-chain. But on-chain solutions require an on-chain risk rating oracle.</div>
-        <div className="section-txt">As DeFi matured, “yolo” and “Testing in Prod” have been recognized as bad risk-management strategies. Today, protocols and devs are looking to build risk-aware solutions so they can scale safely and retain users’ trust.</div>
-        <div className="section-txt">Pythia is setting the standard for risk oracles in DeFi. Its decentralized network of validaotrs provides on-chain risk rating of platforms and assets so dapps could build their automated smart contract solutions with enforced risk mitigation options.</div>
-        <div className="section-txt">With Pythia, DAOs can enforce their treasury managers to deploy capital only in low risk platforms, yield strategies can restrict their risk tranches automatically, and more...</div>
+        <div className="section-txt">Pythia is a decentralized network of validators that provides on-chain risk ratings for platforms and assets in the DeFi space. </div>
+        <div className="section-txt">By using Pythia, DAOs can enforce their treasury managers to invest only in platforms that meet their risk appetite, yield strategies can automatically restrict their risk tranches, and more. </div>
+        <div className="section-txt"> Pythia is setting the standard for risk oracles in DeFi, helping protocols and developers build risk-aware solutions that can scale safely and maintain user trust.</div>
         <div className="button-container">
           <a href="#" role="button">Read Docs</a>
         </div>
