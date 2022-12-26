@@ -2,7 +2,7 @@
 
 const Backstop = props => {
   const {darkMode, isMobile} = window
-  const src = darkMode ? "images/backstop-lg.jpg" : "images/backstop-lg.jpg"
+  const src = darkMode ? "images/diagram-dark.png" : "images/diagram-2.png"
   return <div id="backstop" className="section-container withOverflowingBackground-1 section-3">
   <section className="grid">
       {!isMobile && <div  className="img-container reverse">

@@ -44,6 +44,7 @@ nav {
 :root{
   --calm-bg: #1F202F;
   --main-bg: #1F202F;
+  --main-bg-inverse: #fff;
   --background-color: #1F202F;
 }
 /* Pink Light scheme (Default) */
@@ -56,6 +57,7 @@ nav {
   --primary-inverse: #FFF;
   --calm-bg: #F2FBF6;
   --main-bg: #fff;
+  --main-bg-inverse: #1F202F;
 }
 
 /* Pink Dark scheme (Auto) */
@@ -439,6 +441,7 @@ a.card-link {
   width: 100%;
   max-width: 850px;
   max-height: 500px;
+  background: var(--main-bg-inverse);
 }
 
 .section-main {
