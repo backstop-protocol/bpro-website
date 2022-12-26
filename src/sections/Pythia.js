@@ -20,7 +20,7 @@ const Pythia = props => {
         <div className="section-txt">By using Pythia, DAOs can enforce their treasury managers to invest only in platforms that meet their risk appetite, yield strategies can automatically restrict their risk tranches, and more. </div>
         <div className="section-txt"> Pythia is setting the standard for risk oracles in DeFi, helping protocols and developers build risk-aware solutions that can scale safely and maintain user trust.</div>
         <div className="button-container">
-          <a href="#" role="button" className="coming-soon">coming soon</a>
+          <a href="#" role="button" className="coming-soon">Coming Soon</a>
         </div>
       </div>
       <div className="img-container">
