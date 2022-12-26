@@ -18,7 +18,7 @@ const ProductCard = props => {
     <div className="card-name">{name}</div>
     <div className="card-txt"><b>{short}</b></div>
     <div className="card-txt">{long}</div>
-    <img className="card-arrow" src="images/right-arrow.svg"/>
+    <a>Learn More</a>
   </div>
 }
 

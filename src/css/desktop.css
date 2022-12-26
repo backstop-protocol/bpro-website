@@ -354,6 +354,10 @@ section {
   transition: all 0.3s ease-in-out;
 }
 
+.rectangle a {
+  font-size: 1.5rem;
+}
+
 a.card-link {
   text-decoration: none;
 }
