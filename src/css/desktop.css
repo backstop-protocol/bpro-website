@@ -46,6 +46,7 @@ nav {
   --main-bg: #1F202F;
   --main-bg-inverse: #fff;
   --background-color: #1F202F;
+  --grey-bg: lightgrey;
 }
 /* Pink Light scheme (Default) */
 /* Can be forced with data-theme="light" */
@@ -58,6 +59,7 @@ nav {
   --calm-bg: #F2FBF6;
   --main-bg: #fff;
   --main-bg-inverse: #1F202F;
+  --grey-bg: darkgrey;
 }
 
 /* Pink Dark scheme (Auto) */
@@ -73,6 +75,13 @@ nav {
     --main-bg: #1F202F;
 
   }
+}
+
+.coming-soon {
+  background-color: var(--grey-bg);
+  color: var(--contrast-inverse);
+  pointer-events: none;
+  border: none;
 }
 
 .card-logo{
