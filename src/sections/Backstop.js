@@ -23,8 +23,8 @@ const Backstop = props => {
         <div className="section-txt">The Backstop detaches lending platforms from their dependency on 3rd party flashloan bot operators and DEX liquidity, letting their communities secure the platforms they use, while gaining from clearing risky positions from it and avoiding bad debt.</div>
         <div className="section-txt">The Backstop AMM (B.AMM) enables users to deposit funds into backstop pools, and this liquidity is used to execute liquidations on integrated platforms. Once a liquidation takes place the smart contract pulls the needed funds from the backstop to facilitate the liquidation, and automatically puts the seized collateral for sale. Once sold, the return is deposited back to the backstop pool, and profits are accrued.</div>
         <div className="button-container">
-          <a href="#" role="button">Deposit into a Backstop pool</a>
-          <a href="#" role="button" className="outline">Read Docs</a>
+          <a href="https://app.bprotocol.org" role="button">Deposit into a Backstop pool</a>
+          <a href="https://docs.bprotocol.org" role="button" className="outline">Read Docs</a>
         </div>
       </div>
       {isMobile && <div  className="img-container reverse">

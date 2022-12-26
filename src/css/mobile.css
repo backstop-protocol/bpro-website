@@ -10,6 +10,10 @@
     overflow-x:hidden 
   }
 
+  nav {
+    margin-top: calc(var(--spacing) * 1);
+  }
+
   .container {
     width: calc(100vw - 50px);
     margin: 0 25px;

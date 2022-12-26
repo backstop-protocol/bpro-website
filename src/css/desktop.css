@@ -18,6 +18,10 @@ body::-webkit-scrollbar {
   padding: 2rem;
 }
 
+nav {
+  margin-top: calc(var(--spacing) * 4);
+}
+
 .button-container {
   display: flex;
   justify-content: flex-start;

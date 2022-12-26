@@ -18,7 +18,7 @@ const RiskDao = props => {
         <div className="section-txt">Risk DAO is a service DAO focused on providing a new, open-source risk assessment framework, associated audits, and dashboards to stress test, monitor, and manage risk in DeFi lending protocols as well as stablecoins, L1 and L2 networks.</div>
         <div className="section-txt">B.Protocol was part of the launchpad for RiskDAO and a current partner.</div>
         <div className="button-container">
-          <a href="#" role="button">Browse Dashboards</a>
+          <a href="https://riskdao.org" role="button">Browse Dashboards</a>
         </div>
       </div>
       <div className="img-container">

@@ -8,6 +8,11 @@
   html {
     font-size:9.5px;
   }
+
+  nav {
+    margin-top: calc(var(--spacing) * 3);
+  }
+
   .title {
     font-size: 42px;
     line-height: 56px;

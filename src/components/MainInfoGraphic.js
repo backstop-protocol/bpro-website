@@ -21,7 +21,7 @@ export default props => {
         </div>      
         <div className="card-2">
           <a href="#backstop" className="card-link">
-            <ProductCard logo={"backstop.svg"} name="Backstop" short="Liquidation Engine" long="Mitigating risk for DeFi lending platforms with."/>
+            <ProductCard logo={"backstop.svg"} name="Backstop" short="Liquidation Engine" long="Mitigating risk for DeFi lending platforms."/>
           </a>
         </div>     
         <div className="card-3">
