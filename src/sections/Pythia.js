@@ -21,6 +21,7 @@ const Pythia = props => {
         <div className="section-txt"> Pythia is setting the standard for risk oracles in DeFi, helping protocols and developers build risk-aware solutions that can scale safely and maintain user trust.</div>
         <div className="button-container">
           <a href="#" role="button" className="coming-soon">Coming Soon</a>
+          <a href="https://docs.bprotocol.org" role="button" className="outline">Read More</a>
         </div>
       </div>
       <div className="img-container">
